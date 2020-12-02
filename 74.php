@@ -1,0 +1,27 @@
+<?php
+
+$email='msnju2010@gmail.com';
+$vemail=filter_var($email,FILTER_VALIDATE_EMAIL);
+if ($vemail==FALSE) 
+{
+echo "Invalid Email";	
+}
+else
+{
+echo "Email is Valid";	
+}
+
+FILTER_VALIDATE_INT();
+FILTER_VALIDATE_IP();
+FILTER_VALIDATE_URL();
+FILTER_VALIDATE_MAC();
+FILTER_VALIDATE_BOOLEAN();
+FILTER_VALIDATE_FLOAT();
+FILTER_VALIDATE_DOMAIN();
+FILTER_SANITIZE_URL();
+FILTER_SANITIZE_EMAIL();
+FILTER_SANITIZE_ENCODED();
+
+
+?>
+
